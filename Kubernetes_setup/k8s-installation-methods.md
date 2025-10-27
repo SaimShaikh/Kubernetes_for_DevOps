@@ -983,4 +983,4 @@ There's no one-size-fits-all solution. Evaluate your requirements, team expertis
 **Last Updated**: October 2025  
 **Kubernetes Versions Covered**: v1.27 - v1.30+  
 **Cloud Pricing Data**: Current as of October 2025  
-**Author**: DevOps Engineer
+**Author**: Saime Shaikh
