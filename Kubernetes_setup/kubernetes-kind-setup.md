@@ -1,3 +1,7 @@
+<img width="1344" height="768" alt="image" src="https://github.com/user-attachments/assets/7302a7d9-178a-4aef-9a0f-d51914430fe2" />
+
+---
+
 # Kubernetes Cluster Setup using KIND on AWS EC2
 
 This guide walks you through setting up a multi-node Kubernetes cluster using KIND (Kubernetes IN Docker) on an AWS EC2 instance.
