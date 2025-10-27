@@ -1,9 +1,11 @@
-<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/a6ab418e-a08d-495c-b9cf-459853baa99f" />
+
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/9bd70eb0-76b3-403f-8b7d-e58c8bf4d06e" />
+
 
 ---
 
 
-# Kubernetes in the Real World: From Problem → Solution → History → Advantages → CNCF
+# Kubernetes
 
 ---
 ## 🎯 Real-World Scenario: E-Commerce Scaling Challenge
