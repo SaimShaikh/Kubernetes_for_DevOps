@@ -33,9 +33,10 @@ It is widely used for configuration files, data exchange, cloud automation (like
 - **Key-value pairs:**  
 
 ---
-
+```
 key: value
-- **Comments:**  
+
+
 This is a comment
 text
 - **Lists:**  
@@ -43,16 +44,18 @@ fruits:
 - Apple
 - Banana
 - Cherry
+```
 
-
-- **Dictionaries (Mappings):**  
+**Dictionaries (Mappings):**  
+```
 person:
 name: Alice
 age: 30
 is_student: false
+```
 
-
-- **Nesting:**  
+**Nesting:**  
+```
 company:
 name: ExampleCorp
 employees:
@@ -60,50 +63,56 @@ employees:
 role: DevOps
 - name: Bob
 role: Developer
-
+```
 
 
 ---
 
 ## 📋 Lists and Advanced Features in YAML
 
-- **Basic List:**
+ **Basic List:**
+```
 items:
 - First
 - Second
 - Third
+```
 
-
-- **List of Dictionaries:**
+**List of Dictionaries:**
+```
 people:
 - name: John
 age: 27
 - name: Jane
 age: 29
+```
 
-
-- **Multi-line String (Block Style):**
+**Multi-line String (Block Style):**
+```
 description: |
 This is a multi-line string.
 It preserves newlines and formatting.
+```
 
-
-- **Folded String:**
+**Folded String:**
+```
 summary: >
 This is a folded
 multi-line string that will
 be rendered as a single line.
+```
 
-
-- **Anchors & Aliases:**
+**Anchors & Aliases:**
+```
 default: &defaults
 retries: 3
 timeout: 30
-
+```
 prod:
+```
 <<: *defaults
 timeout: 60
-
+```
 
 ---
 
@@ -140,14 +149,5 @@ timeout: 60
 
 ---
 
-## 📚 Awesome Resources
-
-- [YAML Official Site](https://yaml.org/)
-- [Red Hat: What is YAML?](https://www.redhat.com/en/topics/automation/what-is-yaml)
-- [YAML Syntax for Ansible](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
-- [YAML Tutorial: Everything You Need](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)
-- [YAML for DevOps Beginners](https://www.redhat.com/en/blog/yaml-beginners)
-
----
 
 YAML is the backbone of modern configuration and automation—master it to unlock the full power of DevOps, cloud-native, and infrastructure-as-code workflows.
