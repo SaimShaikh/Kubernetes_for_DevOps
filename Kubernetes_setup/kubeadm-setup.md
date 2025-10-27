@@ -1,20 +1,14 @@
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/a7fa7926-60fa-4dac-aa33-06ea60f87674" />
+
+---
+
 # Kubeadm Installation Guide - Complete Setup for Kubernetes Cluster
 
 A comprehensive step-by-step guide to set up a production-ready Kubernetes cluster using kubeadm on AWS EC2 instances running Ubuntu.
 
 ---
 
-## Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [AWS Setup & Security Group Configuration](#aws-setup--security-group-configuration)
-3. [Common Setup for All Nodes](#common-setup-for-all-nodes)
-4. [Master Node Setup](#master-node-setup)
-5. [Worker Node Setup](#worker-node-setup)
-6. [Cluster Verification](#cluster-verification)
-7. [Troubleshooting](#troubleshooting)
-
----
 
 ## Prerequisites
 
@@ -696,15 +690,7 @@ After successful cluster setup:
 
 ---
 
-## Useful Resources
 
-- [Kubernetes Official Documentation](https://kubernetes.io/docs/)
-- [kubeadm Official Documentation](https://kubernetes.io/docs/reference/setup-tools/kubeadm/)
-- [Calico Documentation](https://docs.tigera.io/calico/latest/)
-- [containerd Documentation](https://containerd.io/docs/)
-- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-
----
 
 ## Troubleshooting Checklist
 
@@ -722,19 +708,9 @@ After successful cluster setup:
 
 ---
 
-## Summary
 
-This guide provides a complete setup for a production-ready Kubernetes cluster using kubeadm. By following these steps carefully, you'll have:
 
-- A functional Kubernetes cluster with 1 master and 2+ worker nodes
-- Container runtime (containerd) properly configured
-- Network plugin (Calico) for pod communication
-- All necessary components installed and configured
-- A secure and scalable foundation for container orchestration
-
----
-
-**Author**: DevOps Engineer  
+**Author**: Saime Shaikh  
 **Last Updated**: October 2025  
 **Kubernetes Version**: v1.29  
 **Container Runtime**: containerd  
