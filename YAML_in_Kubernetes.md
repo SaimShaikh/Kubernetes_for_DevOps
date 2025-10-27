@@ -35,11 +35,7 @@ It is widely used for configuration files, data exchange, cloud automation (like
 ---
 ```
 key: value
-
-
-This is a comment
-text
-- **Lists:**  
+ **Lists:**  
 fruits:
 - Apple
 - Banana
