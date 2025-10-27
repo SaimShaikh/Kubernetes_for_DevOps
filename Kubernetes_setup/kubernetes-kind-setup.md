@@ -294,13 +294,6 @@ Now that your Kubernetes cluster is running, you can:
 
 ---
 
-## Additional Resources
-
-- [KIND Official Documentation](https://kind.sigs.k8s.io/)
-- [Kubernetes Official Documentation](https://kubernetes.io/docs/)
-- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-
----
 
 ## System Requirements
 
@@ -311,7 +304,7 @@ Now that your Kubernetes cluster is running, you can:
 
 **For Production Workloads:**
 - **Instance Type**: t2.large or higher recommended
-- **Storage**: 50 GB or more
+- **Storage**: 20 GB or more
 
 ---
 
@@ -329,13 +322,10 @@ Now that your Kubernetes cluster is running, you can:
 
 This guide is provided as-is for educational purposes.
 
-## Contributing
-
-Feel free to submit issues or pull requests to improve this guide.
 
 ---
 
-**Author**: DevOps Engineer  
+**Author**: Saime Shaikh  
 **Last Updated**: October 2025  
 **Kubernetes Version**: v1.32.1  
 **KIND Version**: v0.22.0
