@@ -670,59 +670,7 @@ Now that your Minikube cluster is running, you can:
 
 ---
 
-## Additional Resources
 
-- [Official Minikube Documentation](https://minikube.sigs.k8s.io/docs/)
-- [Kubernetes Official Documentation](https://kubernetes.io/docs/)
-- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-- [Kubernetes Dashboard Documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
-- [Helm Documentation](https://helm.sh/docs/)
-
----
-
-## Minikube Quick Reference
-
-```bash
-# Installation
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
-
-# Cluster Lifecycle
-minikube start                    # Start cluster
-minikube stop                     # Stop cluster
-minikube delete                   # Delete cluster
-minikube status                   # Check status
-minikube pause                    # Pause cluster
-minikube unpause                  # Unpause cluster
-
-# Information
-minikube version                  # Minikube version
-minikube ip                       # Get cluster IP
-minikube dashboard                # Open dashboard
-minikube logs                     # View logs
-
-# Addons
-minikube addons list              # List all addons
-minikube addons enable <addon>    # Enable addon
-minikube addons disable <addon>   # Disable addon
-
-# Services
-minikube service list             # List services
-minikube service <name>           # Open service in browser
-minikube service <name> --url     # Get service URL
-
-# Configuration
-minikube config set memory 4096   # Set memory
-minikube config set cpus 2        # Set CPUs
-minikube config view              # View config
-
-# Advanced
-minikube ssh                      # SSH into node
-minikube kubectl -- <command>     # Run kubectl command
-minikube profile list             # List profiles
-```
-
----
 
 ## Security Considerations
 
@@ -736,17 +684,8 @@ minikube profile list             # List profiles
 
 ---
 
-## License
 
-This guide is provided as-is for educational purposes.
-
-## Contributing
-
-Feel free to submit issues or pull requests to improve this guide.
-
----
-
-**Author**: DevOps Engineer  
+**Author**: Saime Shaikh  
 **Last Updated**: October 2025  
 **Minikube Version**: Latest  
 **Kubernetes Version**: v1.30+
