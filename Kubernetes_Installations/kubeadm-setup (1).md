@@ -7,6 +7,7 @@
 A comprehensive step-by-step guide to set up a production-ready Kubernetes cluster using kubeadm on AWS EC2 instances running Ubuntu.
 
 ---
+<img width="1060" height="506" alt="SCR-20251028-ofxy" src="https://github.com/user-attachments/assets/064ff823-6fe4-4b14-870e-e95d758678ab" />
 
 
 
