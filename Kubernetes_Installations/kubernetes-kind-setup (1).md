@@ -92,7 +92,11 @@ Download KIND v0.22.0:
 ```bash
 curl -Lo ./kind "https://kind.sigs.k8s.io/dl/v0.22.0/kind-linux-amd64"
 ```
+**or**
 
+```bash
+curl -Lo ./kind "https://kind.sigs.k8s.io/dl/${LATEST_KIND}/kind-linux-amd64"
+```
 Make the KIND binary executable:
 
 ```bash
