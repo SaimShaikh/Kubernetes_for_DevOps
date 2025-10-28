@@ -455,10 +455,17 @@ kubectl cluster-info
 kubectl get pods --all-namespaces
 ```
 
-### Check etcd Status
+### Check Status
 
 ```bash
 kubectl get pods -n kube-system | grep etcd
+```
+
+```bash
+kubectl get pods -n kube-system | grep kube-apiserver
+```
+```bash
+kubectl get pods -n kube-system | grep kube-scheduler
 ```
 
 ### Check Calico Network Plugin
