@@ -1,4 +1,4 @@
-# Kubernetes Namespace - Complete Guide
+# Kubernetes Namespace 
 
 ## 📌 Scenario - The Problem Without Namespace
 
@@ -510,16 +510,7 @@ Namespaces are **essential for managing Kubernetes clusters** in real-world DevO
 
 ---
 
-## 📚 Next Steps
 
-1. Create namespaces for your environments (dev, test, prod)
-2. Apply resource quotas to prevent resource exhaustion
-3. Set up RBAC for access control
-4. Implement network policies for traffic control
-5. Monitor namespace resource usage
-6. Document your namespace strategy
-
----
 
 **Happy Learning! 🎉**
 
@@ -527,4 +518,4 @@ Namespaces are **essential for managing Kubernetes clusters** in real-world DevO
 
 ---
 
-*Created for DevOps Engineers | Easy to Understand | Practical Examples*
+*Created for DevOps Engineers | Easy to Understand*
