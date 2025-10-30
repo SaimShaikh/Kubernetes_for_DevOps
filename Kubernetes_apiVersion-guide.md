@@ -1,5 +1,4 @@
-# Kubernetes apiVersion - A Simple Guide
-
+# Kubernetes apiVersion 
 ## What is apiVersion?
 
 Think of `apiVersion` as a **label that tells Kubernetes which part of its brain should handle your object**.
