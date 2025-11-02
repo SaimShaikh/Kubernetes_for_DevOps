@@ -92,7 +92,7 @@ kubectl apply -f nginx-pod.yaml
 - Delete Pod:  
   `kubectl delete pod pod-name`
 - Connect to Pod:  
-  `kubectl exec -it pod-name -- /bin/bash`
+  `kubectl exec -it pod-name -- /bin/bash or kubectl exec -it pod-name -- bash`
 - List Pods in a namespace:  
   `kubectl get pods -n namespace-name`
 
