@@ -380,6 +380,8 @@ kubectl get hpa
 
 ---
 
+<img width="1388" height="446" alt="SCR-20251102-oudp" src="https://github.com/user-attachments/assets/6fed4274-6cf9-406f-98a4-60a887e64c56" />
+
 ## 🔄 Rolling Updates - Update Without Downtime
 
 ### Update Container Image
