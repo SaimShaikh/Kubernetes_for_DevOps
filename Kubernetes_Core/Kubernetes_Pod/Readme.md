@@ -1,4 +1,4 @@
-# Kubernetes Pods - Complete DevOps Guide
+# Kubernetes Pods
 
 ---
 
