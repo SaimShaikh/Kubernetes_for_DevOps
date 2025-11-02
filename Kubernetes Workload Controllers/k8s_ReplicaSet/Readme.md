@@ -1,3 +1,7 @@
+<img width="1056" height="992" alt="image" src="https://github.com/user-attachments/assets/9a08030f-e1a8-458d-a8a7-c581bf9913b0" />
+
+---
+
 # Kubernetes ReplicaSet 
 
 ## 🚨 Real-Time Problem Scenario
