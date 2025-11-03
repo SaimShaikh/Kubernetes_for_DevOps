@@ -231,7 +231,30 @@ Job Timeout (activeDeadlineSeconds) ────→ Job Failed ✗
 ---
 
 ## Practical Implementation
+### 0. Simple Job File for practice
 
+```bash
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: demo-job
+  namespace: testing
+
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      name: demo-job-pod
+      labels:
+        app: batch-task
+    spec:
+      containers:
+        - name: batch-container
+          image: busybox
+          command: ["sh", "-c", "echo hi friend && sleep 10"]
+      restartPolicy: Never
+```
 ### 1. Simple One-Time Backup Job
 
 ```yaml
