@@ -149,12 +149,13 @@ The DaemonSet controller:
 | **Rolling Updates** | Supported | Supported | Supported | N/A | N/A |
 
 ### Visual Comparison:
-<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/c916527b-1f18-4134-80c1-12e85dbf2039" />
+<img width="1160" height="680" alt="image" src="https://github.com/user-attachments/assets/f15db5c6-da4e-4889-acc1-3b674d3debd6" />
+
 
 ```
 Deployment: [Pod A, Pod B, Pod C] on any nodes
 DaemonSet: [Pod] on Node1, [Pod] on Node2, [Pod] on Node3
-StatefulSet: [Pod-0, Pod-1, Pod-2] with persistent identity
+
 ```
 
 ---
