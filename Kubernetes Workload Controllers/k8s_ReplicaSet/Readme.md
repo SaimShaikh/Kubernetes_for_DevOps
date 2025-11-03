@@ -164,7 +164,34 @@ Deployment → manages → ReplicaSet → manages → Pods
 ## 📝 ReplicaSet YAML File Explained (Simple Way)
 
 Here's a complete ReplicaSet YAML file with easy explanations:
+**Simple YAML file**
+```bash
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replica
+  namespace: testing
 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+
+  template:
+    metadata:
+      name: nginx-replica-pod
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+
+```
+**Advance YAML with Resource Quota** 
 ```yaml
 apiVersion: apps/v1           # API version for ReplicaSet
 kind: ReplicaSet              # Type of resource we're creating
