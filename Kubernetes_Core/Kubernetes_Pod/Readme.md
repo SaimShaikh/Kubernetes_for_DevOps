@@ -30,7 +30,8 @@ A **Pod** is the smallest deployable unit in Kubernetes—it’s a wrapper for o
 - **Self-Healing**: Kubernetes automatically recreates failed Pods.
 
 ---
-![generated-image](https://github.com/user-attachments/assets/96dd7973-82ee-4a2f-80af-78ea83cf1b0f)
+
+<img width="965" height="601" alt="image" src="https://github.com/user-attachments/assets/552f7ea1-0278-4344-b2cc-1f5f1f113100" />
 
 
 ## Pod Lifecycle Explained
