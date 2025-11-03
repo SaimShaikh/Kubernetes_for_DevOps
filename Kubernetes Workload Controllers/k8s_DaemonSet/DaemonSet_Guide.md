@@ -149,6 +149,7 @@ The DaemonSet controller:
 | **Rolling Updates** | Supported | Supported | Supported | N/A | N/A |
 
 ### Visual Comparison:
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/c916527b-1f18-4134-80c1-12e85dbf2039" />
 
 ```
 Deployment: [Pod A, Pod B, Pod C] on any nodes
@@ -157,6 +158,7 @@ StatefulSet: [Pod-0, Pod-1, Pod-2] with persistent identity
 ```
 
 ---
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/6ceb5ea0-0816-4238-8096-c1290194bdbb" />
 
 ## When to Use DaemonSet
 
