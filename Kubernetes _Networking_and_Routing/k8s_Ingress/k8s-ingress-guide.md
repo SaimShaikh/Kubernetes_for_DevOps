@@ -160,7 +160,7 @@ Load Balancer (1 public IP) → Ingress Controller (1 entry point)
 
 ### Complete Traffic Flow
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/fa6cf64b-aa17-422d-83d6-4637fbde270c" /><img width="1264" height="809" alt="SCR-20251105-rbds" src="https://github.com/user-attachments/assets/9bfb5c3e-d170-4dd0-beba-9c52a0784876" />
+<img width="1264" height="809" alt="SCR-20251105-rbds" src="https://github.com/user-attachments/assets/9bfb5c3e-d170-4dd0-beba-9c52a0784876" />
 
 
 ### Request Path:
