@@ -1,3 +1,6 @@
+<img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/78d07044-ac3b-4428-993b-d4b3e1208c15" />
+
+
 # Kubernetes Service - Complete Guide
 
 ## Real-World Problem Scenarios
