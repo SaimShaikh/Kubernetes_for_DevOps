@@ -31,7 +31,7 @@ spec:
       targetPort: 3306
 
 ```
-
+## statefulset.yml
 ```bash
 apiVersion: apps/v1
 kind: StatefulSet
