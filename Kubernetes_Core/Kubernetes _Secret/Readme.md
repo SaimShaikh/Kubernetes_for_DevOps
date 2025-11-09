@@ -106,3 +106,9 @@ mysql-statefulset-0   1/1     Running   0          2m
 mysql-statefulset-1   1/1     Running   0          1m
 mysql-statefulset-2   1/1     Running   0          1m
 ```
+## Testing if You successfully login in to container it means all is working 
+```bash
+kubectl exec -it mysql-statefulset-1 -n mysql -- bash
+bash-5.1# mysql -u root -p
+Enter password: root
+```
