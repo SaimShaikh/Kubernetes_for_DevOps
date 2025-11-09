@@ -1,3 +1,6 @@
+<img width="1728" height="2304" alt="image" src="https://github.com/user-attachments/assets/12f25958-0c06-4c99-9cdc-0f04d473d5b3" />
+
+---
 # Kubernetes Resource Quota - Complete Guide
 
 ## Real-World Problem Scenarios
