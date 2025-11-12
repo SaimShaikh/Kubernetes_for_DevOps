@@ -1,8 +1,4 @@
-# ✅ Kubernetes Dashboard on AWS EC2 - Successful Setup Guide
-
-## 🎉 You Did It! - Complete Success Documentation
-
-This README documents the **exact steps you successfully completed** to set up Kubernetes Dashboard on AWS EC2.
+# ✅ Kubernetes Dashboard on AWS EC2 - 
 
 ---
 
@@ -219,14 +215,15 @@ kubectl proxy
 
 **Command Executed:**
 ```bash
+# Start proxy accessible from outside
+kubectl proxy --port=8001 --address='0.0.0.0' --accept-hosts='^.*$' &
+
+# if Port is busy
 # Check proxy status
 ps aux | grep "kubectl proxy"
 
 # Kill existing proxy
 kill 23704
-
-# Start proxy accessible from outside
-kubectl proxy --port=8001 --address='0.0.0.0' --accept-hosts='^.*$' &
 ```
 
 **What It Does:**
@@ -243,8 +240,6 @@ kubectl proxy --port=8001 --address='0.0.0.0' --accept-hosts='^.*$' &
 
 ### From EC2 Instance:
 ```bash
-# Get instance IP
-hostname -I
 
 # Dashboard URL (replace IP)
 http://<EC2_IP>:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
@@ -311,34 +306,6 @@ kubectl -n kubernetes-dashboard create token admin-user
 - ✅ Delete resources
 - ✅ Create namespaces
 
----
-
-## 📝 Commands You Used (History)
-
-```
-1-4    System setup and update
-5-7    Create and run prepare-ec2.sh
-8-14   Fix script permissions and execute
-15-17  Create and run install-containerd.sh
-18-20  Create and run install-kubernetes.sh
-21-23  Create and run init-control-plane.sh
-24     List files
-25-27  Create and run join-worker.sh (for workers)
-28-30  Create and run install-flannel.sh
-31-34  Create and run setup-kubernetes-ec2.sh
-36-37  Create sample deployment YAML
-38     Generate join token for workers
-39-40  Install Dashboard and create admin user
-41     Generate token for Dashboard login
-42     Start kubectl proxy (local only)
-43     Check IP address
-44     Get hostname/IP
-45     Start proxy in background
-46     Start proxy accessible remotely
-47     Check proxy process
-48     Kill existing proxy
-49     Start new proxy with full access
-```
 
 ---
 
@@ -559,8 +526,5 @@ kubectl cluster-info
 ```
 
 ---
+<img width="3337" height="1937" alt="image" src="https://github.com/user-attachments/assets/fff121f7-88aa-4222-9c70-5726fb460277" />
 
-**Version:** 1.0 - Successfully Deployed  
-**Date:** November 12, 2025  
-**Status:** ✅ Production Ready  
-**Next:** Deploy applications and monitor with Dashboard!
