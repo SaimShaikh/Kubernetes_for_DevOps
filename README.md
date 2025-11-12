@@ -515,10 +515,3 @@ If this helped you learn Kubernetes, please give it a ⭐!
 
 **Happy Learning! Choose your starting point based on your level.** 🚀
 
----
-
-**Version:** 1.0  
-**Last Updated:** November 12, 2025  
-**Status:** ✅ Ready for Use
-
-For feedback or improvements, please open an issue!
