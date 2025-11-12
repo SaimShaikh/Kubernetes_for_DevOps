@@ -472,41 +472,6 @@ Track your learning progress:
 
 ---
 
-# 🤝 Contributing
-
-Found an error? Want to add content?
-
-1. Fork the repository
-2. Create your branch
-3. Make your changes
-4. Submit a pull request
-
----
-
-# 📧 Support
-
-Have questions?
-
-- Open an issue
-- Check existing discussions
-- Read the troubleshooting section in each guide
-
----
-
-# 📄 License
-
-This repository is open source and available under the MIT License.
-
----
-
-# 🙏 Acknowledgments
-
-- Kubernetes Community
-- Contributors
-- You (for learning with us!)
-
----
-
 # 🌟 Star This Repository
 
 If this helped you learn Kubernetes, please give it a ⭐!
