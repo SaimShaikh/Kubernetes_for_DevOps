@@ -167,11 +167,9 @@ saimshaikh-kubernetes_for_devops/
 | **Secret** | Store sensitive data | `Kubernetes_Core/Kubernetes_Secret/` |
 | **Namespace** | Organize resources | `Kubernetes_Core/Kubernetes_namespace/` |
 | **ServiceAccount** | User identity | `Kubernetes_Core/Kubernetes_ServiceAccount/` |
-| **PersistentVolume** | Storage | `Kubernetes_Core/Kubernetes_PersistentVolume/ PVC/` |
+| **PersistentVolume** | Storage | `Kubernetes_Core/Kubernetes_PersistentVolume/` |
 
-**Time to Learn:** 3-4 hours  
-**Difficulty:** ⭐ Beginner  
-**Prerequisites:** Docker basics
+**Time to Learn:** 3-4 hours | **Difficulty:** ⭐ Beginner | **Prerequisites:** Docker basics
 
 ---
 
@@ -188,9 +186,7 @@ saimshaikh-kubernetes_for_devops/
 | **Job** | One-time tasks | `k8s_Job/` |
 | **CronJob** | Scheduled tasks | `k8s_CronJob/` |
 
-**Time to Learn:** 4-5 hours  
-**Difficulty:** ⭐⭐ Intermediate  
-**Prerequisites:** Kubernetes Core knowledge
+**Time to Learn:** 4-5 hours | **Difficulty:** ⭐⭐ Intermediate | **Prerequisites:** Kubernetes Core knowledge
 
 ---
 
@@ -205,9 +201,7 @@ saimshaikh-kubernetes_for_devops/
 | **NetworkPolicy** | Restrict traffic | `k8s_NetworkPolicy/` |
 | **RBAC** | Access control | `k8s_Role_ClusterRole/` |
 
-**Time to Learn:** 3-4 hours  
-**Difficulty:** ⭐⭐ Intermediate  
-**Prerequisites:** Services & Pods
+**Time to Learn:** 3-4 hours | **Difficulty:** ⭐⭐ Intermediate | **Prerequisites:** Services & Pods
 
 ---
 
@@ -225,9 +219,7 @@ saimshaikh-kubernetes_for_devops/
 | **Probes** | Health checks | `Probes/k8s-probes-simple.md` |
 | **Resource Quota** | Limit resource usage | `Resource_Quota/` |
 
-**Time to Learn:** 4-5 hours  
-**Difficulty:** ⭐⭐ Intermediate  
-**Prerequisites:** Deployments, Services
+**Time to Learn:** 4-5 hours | **Difficulty:** ⭐⭐ Intermediate | **Prerequisites:** Deployments, Services
 
 ---
 
@@ -242,9 +234,7 @@ saimshaikh-kubernetes_for_devops/
 | **Dashboard** | Visual management | `FINAL-SUCCESS-README.md` |
 | **EC2 Setup** | Deploy on AWS | `FINAL-SUCCESS-README.md` |
 
-**Time to Learn:** 5-6 hours  
-**Difficulty:** ⭐⭐⭐ Advanced  
-**Prerequisites:** Everything else!
+**Time to Learn:** 5-6 hours | **Difficulty:** ⭐⭐⭐ Advanced | **Prerequisites:** Everything else!
 
 ---
 
@@ -258,9 +248,7 @@ saimshaikh-kubernetes_for_devops/
 | **YAML Files** | Ready-to-use charts | `HELM-yaml-files.yaml` |
 | **Customization** | How to customize charts | `HELM-files-customization-guide.md` |
 
-**Time to Learn:** 3-4 hours  
-**Difficulty:** ⭐⭐ Intermediate  
-**Prerequisites:** Deployments, Services, YAML
+**Time to Learn:** 3-4 hours | **Difficulty:** ⭐⭐ Intermediate | **Prerequisites:** Deployments, Services, YAML
 
 ---
 
@@ -272,75 +260,79 @@ saimshaikh-kubernetes_for_devops/
 | **Architecture** | How Kubernetes works | `Kubernetes_Architecture.md` |
 | **API Versions** | Resource versions | `Kubernetes_apiVersion-guide.md` |
 
-**Time to Learn:** 4-5 hours  
-**Difficulty:** ⭐⭐⭐ Advanced  
-**Prerequisites:** All intermediate topics
+**Time to Learn:** 4-5 hours | **Difficulty:** ⭐⭐⭐ Advanced | **Prerequisites:** All intermediate topics
 
 ---
 
 # 🎓 Recommended Learning Order
 
 ## ✅ Phase 1: Foundations (Week 1)
-```
+
 1. README.md (this file)
 2. Kubernetes_Architecture.md
 3. Kubernetes_Core/Kubernetes_Pod/
 4. Kubernetes_Core/Kubernetes_Service/
 5. Kubernetes_Core/Kubernetes_namespace/
 6. Kubernetes_Commands.md
-```
+
+---
 
 ## ✅ Phase 2: Core Resources (Week 2)
-```
+
 7. YAML_in_Kubernetes.md
 8. Kubernetes_Core/ConfigMap/
 9. Kubernetes_Core/Secret/
 10. Kubernetes Workload Controllers/Deployments/
 11. Kubernetes_Core/PersistentVolume/
-```
+
+---
 
 ## ✅ Phase 3: Advanced Controllers (Week 3)
-```
+
 12. StatefulSet
 13. DaemonSet
 14. Jobs & CronJobs
 15. ReplicaSets
-```
+
+---
 
 ## ✅ Phase 4: Networking (Week 4)
-```
+
 16. Services Deep-dive
 17. Ingress Controllers
 18. Network Policies
-```
+
+---
 
 ## ✅ Phase 5: Scaling & Scheduling (Week 5)
-```
+
 19. HPA & VPA
 20. Affinity
 21. Taints & Tolerations
 22. Probes
-```
+
+---
 
 ## ✅ Phase 6: Production (Week 6)
-```
+
 23. RBAC
 24. Installation methods
 25. Dashboard
-```
+
+---
 
 ## ✅ Phase 7: Package Management (Week 7)
-```
+
 26. Helm Complete Guide
 27. Creating Helm Charts
 28. Customization
-```
+
+---
 
 ## ✅ Phase 8: Advanced Topics (Week 8)
-```
+
 29. CRDs
 30. Architecture Deep-dive
-```
 
 ---
 
@@ -355,44 +347,35 @@ saimshaikh-kubernetes_for_devops/
 | Cluster Admin | 3 files | ⭐⭐⭐ | 6h |
 | Helm | 3 files | ⭐⭐ | 4h |
 | Advanced | 3 files | ⭐⭐⭐ | 5h |
-| **TOTAL** | **36 files** | **Mixed** | **33h** |
+| **TOTAL** | **36+ files** | **Mixed** | **33h+** |
 
 ---
 
 # 🎬 Video Learning Resources
 
-Add your own video references here! Include:
-- Tutorial videos
-- Lecture series
-- Official documentation videos
-- Conference talks
-
-**Format for adding videos:**
-
-| 🎥 **Video Topic**                           | 📘 **Video Title / Link**                                            | ⏱️ **Duration** | 🎯 **Best For**                                     |
-| -------------------------------------------- | -------------------------------------------------------------------- | --------------- | --------------------------------------------------- |
-| **Kubernetes In One Shot**                   | [Watch on YouTube](https://youtu.be/W04brGNgxN4?si=hWwHk-_AAUx8B06J) | ⏱️ 12 Hours     | Complete Kubernetes Deep Dive (Beginner → Advanced) |
-| **Kubernetes for Beginners in One Video 🔥** | [Watch on YouTube](https://youtu.be/rBeyHDKLVqM?si=Ec4NaR3nKKEPcVbB) | ⏱️ 3 Hours      | Absolute Beginners starting with Kubernetes         |
-
+| Video Topic | Video Link | Duration | Best For |
+|---|---|---|---|
+| **Kubernetes In One Shot** | [Watch on YouTube](https://youtu.be/W04brGNgxN4?si=hWwHk-_AAUx8B06J) | 12 Hours | Complete Kubernetes Deep Dive (Beginner → Advanced) |
+| **Kubernetes for Beginners in One Video** | [Watch on YouTube](https://youtu.be/rBeyHDKLVqM?si=Ec4NaR3nKKEPcVbB) | 3 Hours | Absolute Beginners starting with Kubernetes |
 
 ---
 
 # 🛠️ Hands-On Projects
-| Project                                                   |       | GitHub Repo                                                                                  | Video Link |
-| --------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------- | ---------- |
-| 🏦 Bank Application Deployment using DevSecOps on AWS EKS | [Repo](https://github.com/SaimShaikh/Bank-Application-Deployment-using-DevSecOps-on-AWS-EKS) | (add link) |
-| 🔍 Observability for DevOps                               |  [Repo](https://github.com/LondheShubham153/observability-for-devops)                         | (add link) |
-| 🌍 Wanderlust Mega Project                                |  [Repo](https://github.com/SaimShaikh/Wanderlust-Mega-Project)                                | (add link) |
-| 🧩 K8s Voting App                                         |  [Repo](https://github.com/N4si/K8s-voting-app)                                               | (add link) |
-| 🔒 DevSecOps Project                                      |  [Repo](https://github.com/N4si/DevSecOps-Project)                                            | (add link) |
 
+| Project Name | GitHub Repository | Description | Difficulty |
+|---|---|---|---|
+| 🏦 **Bank Application Deployment using DevSecOps on AWS EKS** | [View Repo](https://github.com/SaimShaikh/Bank-Application-Deployment-using-DevSecOps-on-AWS-EKS) | Deploy a complete bank application on AWS EKS with DevSecOps practices | ⭐⭐⭐ |
+| 🔍 **Observability for DevOps** | [View Repo](https://github.com/LondheShubham153/observability-for-devops) | Learn monitoring, logging, and tracing for DevOps | ⭐⭐ |
+| 🌍 **Wanderlust Mega Project** | [View Repo](https://github.com/SaimShaikh/Wanderlust-Mega-Project) | Full-stack application deployment on Kubernetes | ⭐⭐ |
+| 🧩 **K8s Voting App** | [View Repo](https://github.com/N4si/K8s-voting-app) | Simple voting application deployed on Kubernetes | ⭐ |
+| 🔒 **DevSecOps Project** | [View Repo](https://github.com/N4si/DevSecOps-Project) | Complete DevSecOps pipeline with Kubernetes | ⭐⭐⭐ |
 
-
-
+---
 
 # 📚 File References
 
 ## Core Documentation
+
 | File | Purpose | Read Time |
 |------|---------|-----------|
 | `Kubernetes.md` | Overview | 10 min |
@@ -400,7 +383,10 @@ Add your own video references here! Include:
 | `Kubernetes_Commands.md` | Commands reference | 10 min |
 | `YAML_in_Kubernetes.md` | YAML guide | 15 min |
 
+---
+
 ## Quick Reference Files
+
 | File | What's Inside | Location |
 |------|--------------|----------|
 | API Versions | All resource versions | `Kubernetes_apiVersion-guide.md` |
@@ -412,23 +398,29 @@ Add your own video references here! Include:
 # 📝 How to Use This Repository
 
 ### 1. Choose Your Learning Path
+
 - **Beginner:** Start with Kubernetes_Core/
 - **Intermediate:** Go to Workload Controllers/
 - **Advanced:** Jump to Cluster Administration/
 
 ### 2. Read the README in Each Folder
+
 Each folder has a `Readme.md` with an overview
 
 ### 3. Follow the Guides
+
 Each topic has detailed markdown files
 
 ### 4. Practice Hands-On
+
 Use YAML files and commands to practice
 
 ### 5. Build Projects
+
 Use your own project ideas or follow the project templates
 
 ### 6. Join the Community
+
 - Create issues for questions
 - Share your progress
 - Contribute improvements
@@ -515,7 +507,7 @@ This repository is open source and available under the MIT License.
 
 ---
 
-## 🌟 Star This Repository
+# 🌟 Star This Repository
 
 If this helped you learn Kubernetes, please give it a ⭐!
 
@@ -527,6 +519,6 @@ If this helped you learn Kubernetes, please give it a ⭐!
 
 **Version:** 1.0  
 **Last Updated:** November 12, 2025  
-**Status:** ✅ Ready for Customization
+**Status:** ✅ Ready for Use
 
 For feedback or improvements, please open an issue!
