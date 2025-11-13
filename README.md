@@ -357,7 +357,7 @@ saimshaikh-kubernetes_for_devops/
 |---|---|---|---|
 | **Kubernetes In One Shot** | [Watch on YouTube](https://youtu.be/W04brGNgxN4?si=hWwHk-_AAUx8B06J) | 12 Hours | Complete Kubernetes Deep Dive (Beginner → Advanced) |
 | **Kubernetes for Beginners in One Video** | [Watch on YouTube](https://youtu.be/rBeyHDKLVqM?si=Ec4NaR3nKKEPcVbB) | 3 Hours | Absolute Beginners starting with Kubernetes |
-
+| **Certified Kubernetes Administrator (CKA) with Practice Tests** |[Watch On Udemy](https://www.udemy.com/share/101WmE3@1_T2kprNrbVPTc2J7sThNyUxiR-U42IwZ1Bw5-NJbBA-_JRoIqH85ClGbpuQBsgNeA==/)| 26h 28m|Prepare for the Certified Kubernetes Administrators Certification with live practice tests right in your browser - CKA|
 ---
 
 # 🛠️ Hands-On Projects
