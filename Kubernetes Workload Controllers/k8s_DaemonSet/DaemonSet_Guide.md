@@ -1,19 +1,4 @@
-# Kubernetes DaemonSet: Complete DevOps Guide
-
-## Table of Contents
-1. [Real-Time Problem Scenario](#real-time-problem-scenario)
-2. [What is DaemonSet?](#what-is-daemonset)
-3. [Why DaemonSet?](#why-daemonset)
-4. [How DaemonSet Works?](#how-daemonset-works)
-5. [DaemonSet vs Other Workload Controllers](#daemonset-vs-other-workload-controllers)
-6. [When to Use DaemonSet](#when-to-use-daemonset)
-7. [Benefits of DaemonSet](#benefits-of-daemonset)
-8. [Practical Implementation](#practical-implementation)
-9. [Advanced Concepts](#advanced-concepts)
-10. [Troubleshooting & Debugging](#troubleshooting--debugging)
-11. [Best Practices for DevOps](#best-practices-for-devops)
-12. [Real-World Use Cases](#real-world-use-cases)
-
+# Kubernetes DaemonSet
 ---
 
 ## Real-Time Problem Scenario
