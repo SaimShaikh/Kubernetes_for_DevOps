@@ -804,21 +804,3 @@ Don't use Helm when:
 
 ---
 
-# 🚀 Next Steps
-
-1. ✅ Install Helm on your machine
-2. ✅ Complete Exercise 1 (create first chart)
-3. ✅ Install a pre-made chart (WordPress, nginx)
-4. ✅ Customize values
-5. ✅ Practice upgrade and rollback
-6. ✅ Create your own complex chart
-7. ✅ Push chart to repository
-8. ✅ Use Helm in production
-
----
-
-**Happy using Helm!** 🎉
-
-Version: 1.0  
-Date: November 12, 2025  
-Status: ✅ Complete & Ready
