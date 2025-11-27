@@ -125,7 +125,17 @@ Each **Worker Node** runs actual workloads (containers) and communicates with th
 
 ### 1️⃣ Kubelet
 
-**Role:** The primary node agent.
+**Role:** Kubelet manages the containers that are
+scheduled to run on that node. It ensures that
+the containers are running and healthy, and that
+the resources they need are available.
+Kubelet communicates with the Kubernetes API
+server to get information about the containers
+that should be running on the node, and then
+starts and stops the containers as needed to
+maintain the desired state. It also monitors the
+containers to ensure that they are running
+correctly, and restarts them if necessary.
 **Responsibilities:**
 
 * Registers the node with the cluster.
