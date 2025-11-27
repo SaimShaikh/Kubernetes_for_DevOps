@@ -127,7 +127,7 @@ External Client → Node IP:nodePort → Service IP:port → Pod IP:targetPort
 ---
 
 ### NodePort
-**Purpose:** Expose Service on each Node's IP at a static port
+**Purpose:** Opens a port on every worker node so you can access the app from outside the cluster.
 
 **When to Use:**
 - Development and testing environments
@@ -144,7 +144,7 @@ External Client → Node IP:nodePort → Service IP:port → Pod IP:targetPort
 ---
 
 ### LoadBalancer
-**Purpose:** Expose Service externally using cloud provider's load balancer
+**Purpose:** Creates a cloud Load Balancer (AWS, GCP, Azure) and gives you a public IP.
 
 **When to Use:**
 - Production web applications
@@ -180,7 +180,12 @@ External Client → Node IP:nodePort → Service IP:port → Pod IP:targetPort
 ---
 
 ### ExternalName
-**Purpose:** Map Service to external DNS name
+**Purpose:** Map Service to external DNS name . ExternalName Service is a special type of Kubernetes Service that doesn't point to Pods at all.
+
+Instead, it points to an external domain name like:
+ - google.com, api.stripe.com, mydb.company.com
+
+So when something inside the cluster calls this Service, Kubernetes simply redirects the request to that external domain.
 
 **When to Use:**
 - Accessing external services (external databases, APIs)
