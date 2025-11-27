@@ -34,7 +34,7 @@
 
 ## What is a Kubernetes Service?
 
-A **Kubernetes Service** is an abstraction layer that defines a logical set of Pods and provides a stable network endpoint to access them. It acts as an internal load balancer and service discovery mechanism that decouples Pods from direct network access.
+“A Kubernetes Service makes sure our app is always reachable. Pods keep changing — they restart, scale, or get new IPs — but a Service gives one fixed address to access them. It also shares the traffic between Pods so nothing breaks. We can expose the app inside the cluster or outside depending on the Service type.”
 
 ### Key Characteristics
 
