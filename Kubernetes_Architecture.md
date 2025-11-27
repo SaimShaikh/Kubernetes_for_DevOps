@@ -149,6 +149,8 @@ systemctl status kubelet
 * Maintains **network routing** and **load balancing** for Services.
 * Handles cluster-wide IP routing (ClusterIP, NodePort, LoadBalancer).
 * Works at both **L4 (TCP/UDP)** and **L7 (HTTP)** levels.
+* Kube-proxy works by maintaining a set of network rules on each node in the cluster, which are updated dynamically as services are added or removed. When a client sends a request to a service, the request is intercepted by kube-proxy on the node where it was received. Kube-proxy then looks up the destination endpoint for the service and routes the request accordingly. Kube-proxy is an essential component of a Kubernetes cluster, as it ensures that
+services can communicate with each other.
 
 📍 **Modes:**
 
