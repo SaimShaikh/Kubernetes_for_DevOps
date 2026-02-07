@@ -931,16 +931,16 @@ Pods use PVCs, not PVs directly
 Persistent Volume Claim (PVC) stuck in "Pending" status typically indicates Kubernetes cannot bind the PVC to a suitable Persistent Volume (PV).
 
 Common Causes and Fixes
-Missing or Incorrect StorageClass:
+- Missing or Incorrect StorageClass:
 Ensure the PVC specifies a valid storageClassName that exists in your cluster:
 `kubectl get storageclass`
 
-If no suitable StorageClass exists, create one or update the PVC to use an existing one. For dynamic provisioning, the StorageClass must have a provisioner (e.g., kubernetes.io/aws-ebs, rancher.io/local-path). 
+- If no suitable StorageClass exists, create one or update the PVC to use an existing one. For dynamic provisioning, the StorageClass must have a provisioner (e.g., kubernetes.io/aws-ebs, rancher.io/local-path). 
 No Available PVs Matching PVC Requirements:
 Check for existing PVs:
 `kubectl get pv`
 
-Ensure at least one PV is in Available state with matching storage, accessModes, and storageClassName. 
+- Ensure at least one PV is in Available state with matching storage, accessModes, and storageClassName. 
 Storage Provisioner Issues:
 If using dynamic provisioning, verify the provisioner pod is running and healthy:
 
@@ -950,7 +950,7 @@ kubectl get pods -n <provisioner-namespace>
 kubectl logs -n <provisioner-namespace> <provisioner-pod-name>
 ```
 
-Look for errors related to API calls, authentication, or backend storage. 
+- Look for errors related to API calls, authentication, or backend storage. 
 Resource Quotas or Limits:
 Check for quota violations:
 ```bash
