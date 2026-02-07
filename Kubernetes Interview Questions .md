@@ -1182,6 +1182,8 @@ Without limits, a leaking application can consume all node memory.
 
 ## Q46 . Your Kubernetes cluster is running slow. How do you optimize it?
 
+A memory leak in Kubernetes happens when an application inside a container keeps consuming memory but does not release it after use.
+Over time, the container’s memory usage keeps increasing until it exceeds the memory limit set for the pod.
 1. Check resource usage
 
 First, I check CPU and memory usage of nodes and pods.
