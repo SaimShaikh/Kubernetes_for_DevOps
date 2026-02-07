@@ -949,7 +949,10 @@ If using dynamic provisioning, verify the provisioner pod is running and healthy
 kubectl get pods -n <provisioner-namespace>
 kubectl logs -n <provisioner-namespace> <provisioner-pod-name>
 ```
+- Storage provisioner issues: If using dynamic provisioning, verify the storage provisioner (e.g., CSI driver) is running and healthy. Check its logs with kubectl logs -n <namespace> <provisioner-pod>.
 
+- Resource quotas or limits: Quotas (e.g., object-counts, persistentvolumeclaims) may be exceeded. Use kubectl describe pvc and oc describe pvc (in OpenShift) to see quota-related error messages.
+  
 - Look for errors related to API calls, authentication, or backend storage. 
 Resource Quotas or Limits:
 Check for quota violations:
