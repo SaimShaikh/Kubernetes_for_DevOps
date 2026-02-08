@@ -1388,3 +1388,45 @@ LimitRange sets default and maximum/minimum resource values for individual pods 
 - Ensures pods don’t request too much or too little resources
 
 --- 
+
+
+## Q53. How does Kubernetes manage storage orchestration?
+
+Kubernetes manages storage orchestration by abstracting storage from applications and dynamically provisioning, attaching, and managing volumes using built-in resources like Persistent Volumes (PV), Persistent Volume Claims (PVC), and StorageClasses.
+
+Key components involved
+1️⃣ Persistent Volumes (PV)
+
+PV represents the actual storage in the cluster, such as EBS, NFS, or cloud disks.
+It exists independently of pods.
+
+2️⃣ Persistent Volume Claims (PVC)
+
+PVC is a request for storage made by an application.
+Kubernetes automatically binds the PVC to a suitable PV.
+
+3️⃣ StorageClass (Dynamic Provisioning)
+
+StorageClass defines how storage should be created.
+When a PVC is created, Kubernetes dynamically provisions storage based on the StorageClass.
+
+4️⃣ CSI (Container Storage Interface)
+
+Kubernetes uses CSI drivers to connect with different storage providers (AWS, Azure, GCP, on-prem).
+CSI allows Kubernetes to work with many storage systems in a standard way.
+
+How it works (simple flow)
+
+- Application creates a PVC
+
+- Kubernetes finds or creates a PV
+
+- Storage is dynamically provisioned
+
+- Volume is attached to the node
+
+- Pod mounts the volume and uses it
+
+- Data persists even if the pod restarts
+
+---
