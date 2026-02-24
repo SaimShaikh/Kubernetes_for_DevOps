@@ -398,7 +398,7 @@ Why Service Accounts are used
 
 - Follow least privilege principle
 
-I- mprove cluster security
+- Improve cluster security
 
 How Service Accounts work
 
