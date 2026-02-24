@@ -882,6 +882,26 @@ Common reasons:
 
 How do you debug CrashLoopBackOff?
 
+- Check Pod Events with kubectl describe pod
+Run: kubectl describe pod <pod-name>
+Look for Events at the bottom of the output.  Common clues include:
+Back-off restarting failed container (confirms the loop).
+OOMKilled (container killed due to memory limits).
+Liveness probe failed, Startup probe failed, or ImagePullBackOff.
+Missing ConfigMap, Secret, or invalid command/args. 
+- Inspect Previous Container Logs with kubectl logs --previous
+Run: kubectl logs <pod-name> -c <container-name> --previous --tail=50
+Use --previous to view logs from the last crashed instance. This often reveals application errors, startup failures, or configuration issues. 
+- Check for Probe Failures
+If using liveness or readiness probes, they may be too aggressive.  If the app takes time to start, add a startupProbe to delay liveness checks until the app is ready. 
+- Verify Configurations and Resources
+Ensure environment variables, secrets, and configmaps exist and are correctly referenced.
+Check for typos in command, args, or image fields.
+Confirm memory and CPU limits aren’t too low (look for OOMKilled in describe output). 
+- Use kubectl get events for Cluster-Wide Context
+Run: kubectl get events --field-selector involvedObject.name=<pod-name>
+Helps identify resource or scheduling issues across the cluster.
+
 ---
 
 ## Q37. A Deployment update caused downtime. How do you prevent this?
