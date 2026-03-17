@@ -1453,3 +1453,12 @@ How it works (simple flow)
 - Data persists even if the pod restarts
 
 ---
+
+
+## Q54. If I've written a command kubectl scale pods from 5 to 7, where will the request hit first and how will this request flow?
+
+The request first reaches the API server, where authentication verifies the user identity, authorization checks permissions using RBAC, and admission controllers validate or modify the request. Once approved, the desired state is stored in etcd. The controller manager then reconciles the state, ReplicaSet creates pods, and the scheduler assigns them to nodes.”
+
+---
+
+
