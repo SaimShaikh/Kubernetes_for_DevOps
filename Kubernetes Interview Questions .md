@@ -1462,3 +1462,39 @@ The request first reaches the API server, where authentication verifies the user
 ---
 
 
+## Q55. Worker node keep restarting what is the reasons and how to fix it 
+
+If a worker node is continuously restarting, I would approach it by checking system-level issues, kubelet logs, and resource conditions step by step to identify the root cause.
+
+Common Reasons
+
+  1. Resource Exhaustion : High CPU / Memory usage , Node becomes unstable → restarts .
+  2. Kubelet Crash : kubelet service fails → node becomes NotReady → restart .
+  3. Container Runtime Issue : Runtime crash → node unstable
+  4. Disk Pressure / Full Disk : Clean unused images
+  5. Cloud-Level Issues : Auto Scaling replacing unhealthy node . Instance health check failing
+  6. Misconfiguration / Bad Deployment : Heavy or faulty pod causing crash .
+
+
+---
+
+## Q56. Node NotReady deep troubleshooting.
+
+If a node becomes NotReady, I start by checking node conditions using kubectl describe node. Then I verify kubelet status and logs since it is responsible for communication with the control plane.
+
+Next, I check the container runtime and system resources like CPU, memory, and disk. I also validate network connectivity and CNI plugin status.
+
+If needed, I check API server connectivity, certificate validity, and cloud-specific configurations like IAM roles in EKS. This structured approach helps isolate the root cause quickly.
+
+Reason : 
+- Kubelet not running / crashed
+- Container runtime failure (containerd/Docker)
+- CPU / Memory / Disk pressure
+- Network / CNI plugin failure
+- API server not reachable
+- Certificate expired (kubelet cert)
+- Cloud/IAM issue (in EKS)
+
+
+---
+
