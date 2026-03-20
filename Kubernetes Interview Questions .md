@@ -1551,3 +1551,14 @@ Integrate automated unit, integration, and end-to-end tests into our CI/CD pipel
 
 ---
 
+
+## Q59. 
+
+- Blue-Green Deployment: Maintain two identical environments (blue = live, green = staging). Deploy the new version to the idle environment, test it, then switch traffic instantly using a load balancer.  If issues occur, switch back immediately.
+
+- Rolling Updates: Gradually replace old instances with new ones in batches, ensuring some instances always remain live to serve traffic. Requires at least two replicas
+
+- I also use load balancers to distribute traffic and avoid single points of failure.
+
+- Health checks and readiness probes ensure that only healthy instances receive traffic.
+- Use database versioning, shadow tables, or incremental migrations to avoid breaking changes during updates.
