@@ -1498,3 +1498,56 @@ Reason :
 
 ---
 
+## Q57. What will you do if deployment fails in production
+
+Immediate Response and Rollback
+If a deployment fails in production, immediately roll back to the last known stable version using automated rollback mechanisms in your CI/CD pipeline, Kubernetes, Docker, or blue-green/canary deployment strategies.  This minimizes downtime and user impact
+
+
+- If a deployment fails in production, my first priority is to minimize user impact and restore service stability.
+
+- I would immediately initiate a rollback to the last stable version using automated mechanisms like CI/CD pipelines or strategies such as blue-green or canary deployments.
+
+
+- Once the system is stable, I would analyze logs and monitoring tools like Prometheus, Grafana, or ELK to identify the root cause—whether it’s a configuration issue, dependency problem, or failed service.
+
+
+- I would also review the deployment pipeline and environment consistency to check for issues like configuration drift or missing dependencies.
+
+
+- Meanwhile, I would communicate with stakeholders and inform them about the issue and current status to maintain transparency.
+
+
+- After identifying the root cause, I would fix the issue, test it properly in a staging environment, and then redeploy safely.
+
+
+- Finally, I would document the issue and improve the deployment process to prevent similar failures in future.
+
+
+---
+
+## Q58. How can we prevent deployment failures before they happen?
+
+Integrate automated unit, integration, and end-to-end tests into our CI/CD pipeline to catch bugs early.  Use quality gates to block deployments if tests fail or code coverage drops below thresholds.
+
+- To prevent deployment failures, I focus on shifting left—catching issues early in the development and CI/CD process rather than in production.
+
+
+- First, I ensure strong CI pipelines with automated testing, including unit, integration, and basic end-to-end tests, along with linting and code quality checks.
+
+- I use containerization and Infrastructure as Code to maintain environment consistency across development, staging, and production, which helps avoid configuration drift.
+
+
+- Before production deployment, I validate changes in staging environments that closely mirror production.
+
+
+- I also use safe deployment strategies like blue-green or canary releases to reduce risk and limit the impact of failures.
+
+
+- Monitoring and alerting are set up to detect issues early, and I include health checks and readiness probes to ensure only healthy services receive traffic.
+
+
+- Finally, I maintain proper rollback strategies and deployment checklists to handle any unexpected issues quickly.
+
+---
+
