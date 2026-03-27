@@ -1552,7 +1552,7 @@ Integrate automated unit, integration, and end-to-end tests into our CI/CD pipel
 ---
 
 
-## Q59. 
+## Q59. How Blue-Green Deployment works 
 
 - Blue-Green Deployment: Maintain two identical environments (blue = live, green = staging). Deploy the new version to the idle environment, test it, then switch traffic instantly using a load balancer.  If issues occur, switch back immediately.
 
@@ -1562,3 +1562,43 @@ Integrate automated unit, integration, and end-to-end tests into our CI/CD pipel
 
 - Health checks and readiness probes ensure that only healthy instances receive traffic.
 - Use database versioning, shadow tables, or incremental migrations to avoid breaking changes during updates.
+
+---
+
+## Q60. What is Rate Limiting in Kubernetes?
+
+Rate limiting in Kubernetes is a technique used to control the number of requests sent to an application within a specific time period, in order to prevent overload and ensure system stability.
+
+---
+
+## Q61. API Gateway vs Ingress
+
+| Category                   | 🚪 Ingress (Kubernetes)                               | 🧠 API Gateway                            |
+| -------------------------- | ----------------------------------------------------- | ----------------------------------------- |
+| **What it is**             | Native K8s object to expose services                  | Full API management layer                 |
+| **Main Purpose (WHY)**     | Route external traffic into cluster                   | Control, secure & manage APIs             |
+| **Level**                  | Basic routing (Layer 7 HTTP)                          | Advanced application layer                |
+| **Intelligence**           | Low                                                   | High                                      |
+| **Routing**                | Path & host-based                                     | Smart routing (headers, tokens, versions) |
+| **Authentication**         | ❌ Not built-in (needs extra config)                   | ✅ Built-in (JWT, OAuth, API keys)         |
+| **Rate Limiting**          | ⚠️ Limited (annotations via NGINX Ingress Controller) | ✅ Strong & flexible                       |
+| **Request Transformation** | ❌ Not supported                                       | ✅ Supported                               |
+| **Monitoring & Analytics** | Basic                                                 | Advanced                                  |
+| **Scope**                  | Inside Kubernetes only                                | Works across systems (K8s + external)     |
+| **Complexity**             | Simple                                                | Complex                                   |
+| **Examples**               | NGINX Ingress Controller, Traefik                     | Kong API Gateway, AWS API Gateway         |
+
+
+---
+
+## Q62. What is API Gateway in ?
+
+<img width="1400" height="865" alt="image" src="https://github.com/user-attachments/assets/ebbdec64-d2f5-4c9a-8967-2f72445774a3" />
+
+An API Gateway is a server that acts as an entry point between clients and backend services, handling request routing, security, and other cross-cutting concerns.
+
+
+---
+
+
+
