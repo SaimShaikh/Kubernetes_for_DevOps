@@ -1600,5 +1600,42 @@ An API Gateway is a server that acts as an entry point between clients and backe
 
 ---
 
+## Q63. Can you describe what are Helm charts and what problem basically Helm is solving?
+
+Helm is basically a package manager for Kubernetes, similar to how we use apt or npm in other ecosystems.
+
+A Helm chart is a collection of pre-defined Kubernetes YAML templates along with configurable values. It allows us to define, install, and manage applications in Kubernetes in a reusable and standardized way.
+
+The main problem Helm solves is the complexity of managing multiple Kubernetes YAML files. In real projects, deploying an application involves many resources like Deployments, Services, ConfigMaps, and Ingress, and handling all of them manually becomes difficult, error-prone, and hard to maintain.
+
+Helm simplifies this by providing templating, so we can reuse the same chart across different environments like dev, staging, and production by just changing values instead of editing multiple files. It also supports versioning and rollback, which is very useful if something breaks in production
+
+
+---
+
+## Q64. Can you explain the flow from when a user hits a public URL to when the request reaches your pod in EKS? 
+
+<img width="846" height="728" alt="image" src="https://github.com/user-attachments/assets/2e0d5328-a7a4-460b-82fe-55de6a19e6f9" />
+
+When a user hits a public URL like api.example.com, the request follows a structured flow before reaching a pod in an EKS cluster.
+
+First, the request goes to DNS, typically managed by Amazon Route 53, which resolves the domain name to the public endpoint of an Application Load Balancer.
+
+If a CDN like Amazon CloudFront is configured, the request is routed through it first, where caching and TLS termination can happen.
+
+Next, the request reaches the AWS Application Load Balancer (ALB), which operates at Layer 7 and routes traffic based on host or path rules. Security groups and WAF policies can also filter traffic at this stage.
+
+The ALB then forwards the request to the Kubernetes Ingress controller inside the EKS cluster. The Ingress resource defines routing rules and maps the request to the appropriate Kubernetes Service.
+
+The Service, usually of type ClusterIP, load balances the traffic to the target pods based on label selectors. Internally, kube-proxy manages the networking rules to route traffic correctly.
+
+Finally, the request reaches the application running inside the pod, and the response is sent back through the same path.
+
+User → Route 53 → (CloudFront) → ALB → Ingress → Service → Pod
+
+
+---
+
+
 
 
