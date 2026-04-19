@@ -1637,5 +1637,44 @@ User → Route 53 → (CloudFront) → ALB → Ingress → Service → Pod
 ---
 
 
+## Q65. What is Pod Affinity in Kubernetes ?
+
+Pod Affinity in Kubernetes allows Pods to be scheduled close to other Pods based on labels and topology, improving communication and performance.
+
+---
+
+## Q66. Pod Anti-Affinity
+
+Do NOT place this Pod near certain Pods. Pod Anti-Affinity ensures Pods are separated to improve availability and fault tolerance.
+
+```bash
+affinity:
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    - labelSelector:
+        matchExpressions:
+        - key: app
+          operator: In
+          values:
+          - frontend
+      topologyKey: "kubernetes.io/hostname"
+
+```
+## This Pod will NOT run on nodes where frontend Pods exist
+
+---
+
+
+## Q67. what is Node Affinity 
+
+Node Affinity allows Kubernetes to schedule Pods on specific nodes using label-based rules with both hard and soft constraints, improving workload placement and resource utilization.
+
+
+- 1. Performance-Based Scheduling (SSD vs HDD)
+  2. Specialized Hardware (GPU Workloads)
+  3. Location-Based Scheduling (Region / Zone)
+  4. Isolation (Dedicated Nodes)
+
+---
 
 
