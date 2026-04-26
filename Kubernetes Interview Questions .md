@@ -1677,4 +1677,10 @@ Node Affinity allows Kubernetes to schedule Pods on specific nodes using label-b
 
 ---
 
+## Q68. How does DNS work inside Kubernetes?
+
+In Kubernetes, DNS is handled by CoreDNS. When a pod wants to access a service, it sends a DNS request to CoreDNS. CoreDNS looks up the service in Kubernetes and returns its ClusterIP. The pod then uses that IP to communicate. This allows pods to use stable names instead of changing IPs.
+
+---
+
 
