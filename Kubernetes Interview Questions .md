@@ -1683,4 +1683,20 @@ In Kubernetes, DNS is handled by CoreDNS. When a pod wants to access a service, 
 
 ---
 
+## Q69. How does Kubernetes handle a scenario where the desired pod count is 5 but only 3 are running? 
 
+In Kubernetes, the control plane continuously checks the desired state. If the desired number of pods is 5 but only 3 are running, the controller (like a Deployment or ReplicaSet) automatically creates 2 more pods to match the desired count
+
+---
+
+## Q70. How to establish communication between different Kubernetes namespaces?
+
+By default, Kubernetes allows communication between pods across different namespaces using their service DNS names.
+
+To enable communication, I expose the application using a Service and access it using the format:
+service-name.namespace.svc.cluster.local
+
+
+---
+
+## Q71. 
